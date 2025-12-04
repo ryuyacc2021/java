@@ -43,7 +43,7 @@ public class Question1 {
 		
 		//Int型の変数宣言と初期値の設定し出力
 		int age=25;
-		System.out.println("年齢：" +age+ "歳");
+		System.out.println("年齢:" +age+ "歳");
 		
 		// num1に10を代入num2に5を代入し2つを足した結果をsumという変数に代入するし出力
 		int num1 =10;
@@ -54,12 +54,12 @@ public class Question1 {
 		//Int型の変数宣言し、80を代入してから自己代入で20を加えてから出力
 		int score =80;
 		score +=20;
-		System.out.println("最終スコア：" +score);
+		System.out.println("最終スコア:" +score);
 		
 		//Double型の変数を宣言し値を代入、Int型変数に手動変換して出力
 		double price =99.99;
 		int Price = (int)price;
-		System.out.println("整数価格：" +Price);
+		System.out.println("整数価格:" +Price);
 		
 		//String型の変数を宣言し文字列を代入、オブジェクトをInt型に変換してそこから10を足した値を出力
 		String numStr = "123";
@@ -69,7 +69,7 @@ public class Question1 {
 		//Int型の変数に50を代入、変数をオブジェクトに変換し、結果を出力
 		int num = 50;
 		String Num = String.valueOf(num);
-		System.out.println("得点：" +Num + "点");
+		System.out.println("得点:" +Num + "点");
 		
 		// Int型の変数aに10、bに20を代入、aがbより小さいかどうかを条件演算子で判定、resultに代入して結果を出力
 		int a = 10, b = 20;
