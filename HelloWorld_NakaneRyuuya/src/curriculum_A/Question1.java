@@ -6,14 +6,14 @@ public class Question1 {
 		// TODO 自動生成されたメソッド・スタブ
 		
 		// 変数宣言、初期値の設定
-		byte byteNum =1;
-		short shortNum =10;
-		int intNum =100;
-		long longNum =1000;
-		float floatNum =1.5f;
-		double doubleNum =2.5;
-		char letter ='A';
-		String letters ="はろー";
+		byte byteNum =0;
+		short shortNum =0;
+		int intNum =0;
+		long longNum =0L;
+		float floatNum =0.0f;
+		double doubleNum =0.0;
+		char letter ='\u0000';
+		String letters ="null";
 		boolean isBoolean =false;
 		
 		// 変数に値を代入
