@@ -156,15 +156,14 @@ public class Question2 {
 		// =====================================
 		// 問題８
 		// =====================================
+		sc.nextLine(); // 改行を消費
 		
-		// Scannerオブジェクトを作成し、入力を読み取れるように設定
-		Scanner sc1 = new Scanner(System.in);
 		
 		// 整数の入力
 			System.out.print("文字を入力してください：");
 		
 		// String型変数をセットし次の単語を読み取る
-		String input = sc1.nextLine();
+		String input = sc.nextLine();
 
 		// null または 空文字のチェックし結果を出力する
 		if (input == null || input.isEmpty()) {
@@ -240,7 +239,8 @@ public class Question2 {
 			
 		}
 	
-	
+       // スキャナーを使い終わったら閉じます（リソースの解放）
+       sc.close();
 	
 	
 	}
