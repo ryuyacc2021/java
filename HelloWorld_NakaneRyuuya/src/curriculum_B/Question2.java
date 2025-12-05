@@ -167,7 +167,7 @@ public class Question2 {
 
 		// null または 空文字のチェックし結果を出力する
 		if (input == null || input.isEmpty()) {
-			System.out.print("入力が無効です");
+			System.out.println("入力が無効です");
 		} else {
 			System.out.println("入力内容：" + input);
 		}
