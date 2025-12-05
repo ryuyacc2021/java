@@ -36,7 +36,7 @@ public class Question3 {
 		
 		// Int型変数に10を代入し変数が1になるまで減らす
 		for (int i = 10; i >= 1; i--) {
-			System.out.println("カウントダウン" + i);
+			  System.out.println("カウントダウン" + i);
 		}
 		
 		// =====================================
@@ -54,7 +54,7 @@ public class Question3 {
 		}
 			
 		// 結果を出力する
-			System.out.println(sum);
+			  System.out.println(sum);
 		
 		
 		// =====================================
@@ -66,10 +66,10 @@ public class Question3 {
 		
 		// 各行に出力する * の数を制御
 		 for (int asterisk = 1; asterisk <= i; asterisk++) {
-			 System.out.print("*");
+			   System.out.print("*");
 			    }
 		// 改行
-			 System.out.println();
+			   System.out.println();
 			 
 			}
 
@@ -82,29 +82,28 @@ public class Question3 {
 		
 		// 変数が10になるまでループをする
 		while (count <= 10) {
-			
 		// 結果を出力する
-			System.out.println(count);
+			  System.out.println(count);
 			count++; // countを1ずつ増やす
-		
+		}
+			
 		// =====================================
 		// 問題６
 		// =====================================
 		
-		/*count = 1;
+		count = 1;
 		
-		while (count <= 20) {
+		while (count<= 20) {
 			if (count % 2 == 0) {
-				
+			  System.out.println(count);
 			}
-			
-			System.out.println(count);
 			count++;
 		}
-		*/
+
 		
 		
-		}
+		
+		
 		}
 
 }

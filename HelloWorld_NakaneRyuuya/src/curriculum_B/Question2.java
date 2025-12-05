@@ -140,16 +140,16 @@ public class Question2 {
 			System.out.print("得点を入力してください：");
 		
 		// Int型変数をセットし次の単語を読み取る	
-		int Score = sc.nextInt();
+		int point = sc.nextInt();
 		
 		//条件設定をし、それに合うものを出力する
-		if (Score >= 90) {
+		if (point >= 90) {
 			System.out.println("優");
-		} else if (Score >= 70) {
+		} else if (point >= 70) {
 			System.out.println("良");
-		} else if (Score >= 50) {
+		} else if (point >= 50) {
 			System.out.println("可");
-		} else if (Score < 50) {
+		} else if (point < 50) {
 			System.out.println("不可");
 		}
 		
