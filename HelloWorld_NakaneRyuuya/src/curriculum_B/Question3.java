@@ -13,10 +13,10 @@ public class Question3 {
 		// =====================================
 		
 		// Int型変数が10になるまでループする処理
-		for (int i = 1; i <= 10; i++) {
+		for (int a = 1; a <= 10; a++) {
 			
 		// その結果を出力する
-			   System.out.println(i);  
+			   System.out.println(a);  
 			  } 
 		
 		// =====================================
@@ -24,11 +24,11 @@ public class Question3 {
 		// =====================================
 		
 		// Int型変数が20になるまでループする処理
-		for (int i = 1; i <=20; i++) {
+		for (int b = 1; b <=20; b++) {
 		 
 		// 変数が偶数のみ出力する	
-			if (i % 2 == 0) {
-			  System.out.println(i);
+			if (b % 2 == 0) {
+			  System.out.println(b);
 		     }
 		}
 		
@@ -37,8 +37,8 @@ public class Question3 {
 		// =====================================
 		
 		// Int型変数に10を代入し変数が1になるまで減らす
-		for (int i = 10; i >= 1; i--) {
-			  System.out.println("カウントダウン" + i);
+		for (int c = 10; c >= 1; c--) {
+			  System.out.println("カウントダウン" + c);
 		}
 		
 		// =====================================
@@ -49,10 +49,10 @@ public class Question3 {
 		int sum  = 0;
 		
 		// 1から100まで繰り返す処理
-		for (int i = 1; i <= 100; i++) {
+		for (int d = 1; d <= 100; d++) {
 		
 		// 1から100までの合計を足す	
-			sum += i;
+		sum += d;
 		}
 			
 		// 結果を出力する
@@ -64,10 +64,10 @@ public class Question3 {
 		// =====================================
 		
 		// 行を繰り返す
-		for (int i = 1; i <= 5; i++) {
+		for (int e = 1; e <= 5; e++) {
 		
 		// 各行に出力する * の数を制御
-		 for (int asterisk = 1; asterisk <= i; asterisk++) {
+		 for (int asterisk = 1; asterisk <= e; asterisk++) {
 			   System.out.print("*");
 			    }
 		// 改行
@@ -86,7 +86,7 @@ public class Question3 {
 		while (count <= 10) {
 		// 結果を出力する
 			  System.out.println(count);
-			count++; // ずつ増やす
+		count++; // ずつ増やす
 		}
 			
 		// =====================================
@@ -94,16 +94,16 @@ public class Question3 {
 		// =====================================
 		
 		// 変数をし値を代入
-		count = 1;
+		int counts = 1;
 		
 		// 1から20まで繰り返す
-		while (count<= 20) {
+		while (counts<= 20) {
 			
 		// 変数を2で割り切れる値のみ出力する
-			if (count % 2 == 0) {
-			  System.out.println(count);
-			}
-			count++; // 1ずつ増やす
+			if (counts % 2 == 0) {
+			  System.out.println(counts);
+		}
+		counts++; // 1ずつ増やす
 		}
 
 		// =====================================
@@ -111,12 +111,12 @@ public class Question3 {
 		// =====================================		
 		
 		// 変数を宣言し値を代入
-		int i = 10;
+		int f = 10;
 		
 		// 10から1まで繰り返す
-		while (i >= 1) {
-			  System.out.println("カウントダウン: " + i);
-			i--; // 1ずつ減らす
+		while (f >= 1) {
+			  System.out.println("カウントダウン: " + f);
+			f--; // 1ずつ減らす
 			}
 				
 		// =====================================
@@ -127,12 +127,12 @@ public class Question3 {
 		sum = 0;
 		
 		// カウントする変数
-		i = 1;
+		int g = 1;
 		
 		// 1から100まで足し続ける
-		while(i <= 100) {
-			sum += i;
-			i++;
+		while(g <= 100) {
+		sum += g;
+		g++;
 		}
 		
 		// 結果を出力する
@@ -148,12 +148,12 @@ public class Question3 {
 		Scanner sc = new Scanner(System.in);
 		
 		// 変数を宣言し0以外の値を代入
-		i = -1;
+		int h = -1;
 		
 		// 0が入力されるまで繰り返す
-		while(i != 0) {
+		while(h != 0) {
 			System.out.print("数値を入力してください：");
-			i = sc.nextInt();
+			h = sc.nextInt();
 		}
 			
 		// 終了メッセージ
@@ -166,22 +166,22 @@ public class Question3 {
 		// =====================================
 		// 問題１１
 		// =====================================		
-	
+		
 		// 1～9 の九九を表示
-			for (i = 1; i <= 9; i++) {
+			for (int i = 1; i <= 9; i++) {
 
-			    for (int o = 1; o <= 9; o++) {
+			    for (int j = 1; j <= 9; j++) {
 
 		 // 数値を2桁表示（01など）
 			String left  = String.format("%02d", i);
-			String right = String.format("%02d", o);
-			String result = String.format("%02d", i * o);
+			String right = String.format("%02d", j);
+			String result = String.format("%02d", i * j);
 
 			        // 表示形式
 			        System.out.print(left + " * " + right + " = " + result);
 
 			        // 区切り表示
-			        if (o != 9) {
+			        if (j != 9) {
 			            System.out.print(" || ");
 			        }
 			    }
