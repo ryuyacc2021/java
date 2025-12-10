@@ -1,5 +1,7 @@
 package curriculum_B;
 
+import java.util.Scanner;
+
 public class Question3 {
 
 	public static void main(String[] args) {
@@ -84,26 +86,116 @@ public class Question3 {
 		while (count <= 10) {
 		// 結果を出力する
 			  System.out.println(count);
-			count++; // countを1ずつ増やす
+			count++; // ずつ増やす
 		}
 			
 		// =====================================
-		// 問題６
+		// 問題７
 		// =====================================
 		
+		// 変数をし値を代入
 		count = 1;
 		
+		// 1から20まで繰り返す
 		while (count<= 20) {
+			
+		// 変数を2で割り切れる値のみ出力する
 			if (count % 2 == 0) {
 			  System.out.println(count);
 			}
-			count++;
+			count++; // 1ずつ増やす
 		}
 
+		// =====================================
+		// 問題８
+		// =====================================		
+		
+		// 変数を宣言し値を代入
+		int i = 10;
+		
+		// 10から1まで繰り返す
+		while (i >= 1) {
+			  System.out.println("カウントダウン: " + i);
+			i--; // 1ずつ減らす
+			}
+				
+		// =====================================
+		// 問題９
+		// =====================================		
+		
+		// 合計を入れる変数
+		sum = 0;
+		
+		// カウントする変数
+		i = 1;
+		
+		// 1から100まで足し続ける
+		while(i <= 100) {
+			sum += i;
+			i++;
+		}
+		
+		// 結果を出力する
+			System.out.println(sum);
 		
 		
+		// =====================================
+		// 問題１０
+		// =====================================		
+	
+			
+		// Scannerオブジェクトを作成し、入力を読み取れるように設定
+		Scanner sc = new Scanner(System.in);
+		
+		// 変数を宣言し0以外の値を代入
+		i = -1;
+		
+		// 0が入力されるまで繰り返す
+		while(i != 0) {
+			System.out.print("数値を入力してください：");
+			i = sc.nextInt();
+		}
+			
+		// 終了メッセージ
+			System.out.println("終了しました");
+			
+		// スキャナーclose
+			sc.close();
 		
 		
+		// =====================================
+		// 問題１１
+		// =====================================		
+	
+		// 1～9 の九九を表示
+			for (i = 1; i <= 9; i++) {
+
+			    for (int o = 1; o <= 9; o++) {
+
+		 // 数値を2桁表示（01など）
+			String left  = String.format("%02d", i);
+			String right = String.format("%02d", o);
+			String result = String.format("%02d", i * o);
+
+			        // 表示形式
+			        System.out.print(left + " * " + right + " = " + result);
+
+			        // 区切り表示
+			        if (o != 9) {
+			            System.out.print(" || ");
+			        }
+			    }
+
+			    // 改行
+			    System.out.println();
+			}
+
+	
+	
+	
+	
+	
+	
 		}
 
 }
