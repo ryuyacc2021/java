@@ -155,7 +155,7 @@ public class Question4 {
 	// =====================================  
  
     // 配列を用意
-    int[][] array2 = {
+    int[][] array8 = {
     	{10, 20, 30}, 
     	{40, 50, 60}, 
     	{70, 80, 90}
@@ -165,11 +165,11 @@ public class Question4 {
     int sum2 = 0;
     
     // 行と列のループ処理
-    for(int h = 0; h < array2.length; h++) {
-    for(int i = 0; i < array2[h].length; i++) {
+    for(int h = 0; h < array8.length; h++) {
+    for(int i = 0; i < array8[h].length; i++) {
     	
     // 値をsum2に足す
-    	sum2 += array2[h][i];
+    	sum2 += array8[h][i];
     
     	}
     
@@ -183,28 +183,28 @@ public class Question4 {
     // ===================================== 
     
     // 配列を用意
-    int[][] array3 = {
+    int[][] array9 = {
     	{12, 15, 8},
     	{6, 19, 25}, 
     	{30, 2, 10}
     };
     
     // 最初の要素を最大・最小の基準にする
-	int max2 = array3[0][0];
-	int min2 = array3[0][0];
+	int max2 = array9[0][0];
+	int min2 = array9[0][0];
     
 	// 配列を全てチェック
-    for(int j = 0; j < array3.length; j++) {
-    for(int k = 0; k < array3[j].length; k++) {
+    for(int j = 0; j < array9.length; j++) {
+    for(int k = 0; k < array9[j].length; k++) {
     	
     // 最大値をチェック
-		if(array3[j][k] > max2) {
-			max2 = array3[j][k];
+		if(array9[j][k] > max2) {
+			max2 = array9[j][k];
 		}
 		
 	// 最小値をチェック
-		if(array3[j][k] < min2) {
-			min2 = array3[j][k];
+		if(array9[j][k] < min2) {
+			min2 = array9[j][k];
 			}
 		
     	}
@@ -220,16 +220,16 @@ public class Question4 {
 	 // ===================================== 		
 	
 	// 3次元配列を用意
-	int[][][] array4 = {
+	int[][][] array10 = {
 		{{1, 2}, {3, 4}},
 		{{5, 6}, {7, 8}}
 	};
 	
 	// 3重ループですべて表示
-	for(int l = 0; l < array4.length; l++) {
-	for(int n = 0; n < array4[l].length; n++) {
-	for(int m = 0; m < array4[l][n].length; m++) {
-		System.out.print(array4[l][n][m] + " ");
+	for(int l = 0; l < array10.length; l++) {
+	for(int n = 0; n < array10[l].length; n++) {
+	for(int m = 0; m < array10[l][n].length; m++) {
+		System.out.print(array10[l][n][m] + " ");
 				
 			}
 	// 改行
