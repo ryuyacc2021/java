@@ -16,8 +16,8 @@ public class Question3 {
 		for (int a = 1; a <= 10; a++) {
 			
 		// その結果を出力する
-			   System.out.println(a);  
-			  } 
+			System.out.println(a);  
+		} 
 		
 		// =====================================
 		// 問題２
@@ -28,8 +28,8 @@ public class Question3 {
 		 
 		// 変数が偶数のみ出力する	
 			if (b % 2 == 0) {
-			  System.out.println(b);
-		     }
+			System.out.println(b);
+		}
 		}
 		
 		// =====================================
@@ -38,7 +38,7 @@ public class Question3 {
 		
 		// Int型変数に10を代入し変数が1になるまで減らす
 		for (int c = 10; c >= 1; c--) {
-			  System.out.println("カウントダウン" + c);
+			System.out.println("カウントダウン" + c);
 		}
 		
 		// =====================================
@@ -56,7 +56,7 @@ public class Question3 {
 		}
 			
 		// 結果を出力する
-			  System.out.println(sum);
+			System.out.println(sum);
 		
 		
 		// =====================================
@@ -68,12 +68,12 @@ public class Question3 {
 		
 		// 各行に出力する * の数を制御
 		 for (int asterisk = 1; asterisk <= e; asterisk++) {
-			   System.out.print("*");
-			    }
+			System.out.print("*");
+		}
 		// 改行
-			   System.out.println();
+			System.out.println();
 			 
-			}
+		}
 
 		// =====================================
 		// 問題６
@@ -85,8 +85,8 @@ public class Question3 {
 		// 変数が10になるまでループをする
 		while (count <= 10) {
 		// 結果を出力する
-			  System.out.println(count);
-		count++; // ずつ増やす
+			System.out.println(count);
+			count++; // ずつ増やす
 		}
 			
 		// =====================================
@@ -101,9 +101,9 @@ public class Question3 {
 			
 		// 変数を2で割り切れる値のみ出力する
 			if (counts % 2 == 0) {
-			  System.out.println(counts);
+			System.out.println(counts);
 		}
-		counts++; // 1ずつ増やす
+			counts++; // 1ずつ増やす
 		}
 
 		// =====================================
@@ -115,9 +115,9 @@ public class Question3 {
 		
 		// 10から1まで繰り返す
 		while (f >= 1) {
-			  System.out.println("カウントダウン: " + f);
+			System.out.println("カウントダウン: " + f);
 			f--; // 1ずつ減らす
-			}
+		}
 				
 		// =====================================
 		// 問題９
@@ -168,33 +168,27 @@ public class Question3 {
 		// =====================================		
 		
 		// 1～9 の九九を表示
-			for (int i = 1; i <= 9; i++) {
+		for (int i = 1; i <= 9; i++) {
 
-			    for (int j = 1; j <= 9; j++) {
+		 for (int j = 1; j <= 9; j++) {
 
 		 // 数値を2桁表示（01など）
 			String left  = String.format("%02d", i);
 			String right = String.format("%02d", j);
 			String result = String.format("%02d", i * j);
 
-			        // 表示形式
-			        System.out.print(left + " * " + right + " = " + result);
+		// 表示形式
+			System.out.print(left + " * " + right + " = " + result);
 
-			        // 区切り表示
-			        if (j != 9) {
-			            System.out.print(" || ");
-			        }
-			    }
+		// 区切り表示
+			if (j != 9) {
+			System.out.print(" || ");
+		}
+		}
 
-			    // 改行
-			    System.out.println();
-			}
-
-	
-	
-	
-	
-	
+		// 改行
+			System.out.println();
+		}
 	
 		}
 

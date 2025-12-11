@@ -15,7 +15,7 @@ public class Question4 {
 	int[] numbers = {1, 2 , 3, 4, 5};
 	
 	// 配列の中身を順に出力する
-	for(int a = 0 ; a <= 4 ; a++) {
+	for(int a = 0 ; a < numbers.length ; a++) {
 		System.out.println(numbers[a]);
 	}
 		
@@ -28,7 +28,7 @@ public class Question4 {
 	int[] numbers2 = {10, 20, 30, 40, 50};
 	
 	// 配列の中身を逆に出力する
-	for(int b = 4 ; b >= 0 ; b--) {
+	for(int b = numbers2.length - 1; b >= 0; b--) {
 		System.out.println(numbers2[b]);
 	}
 
