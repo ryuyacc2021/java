@@ -110,15 +110,14 @@ public class Question4 {
     int input = sc.nextInt();
 	
     // 配列の中を1つずつ確認
-    for(int e = 0; e < numbers.length; e++) {
+    for(int e = 0; e < numbers6.length; e++) {
     	
     // 配列の要素と同じ値ならっループ終了
-    	if(numbers6[e] == input) {
-    		found = true;
-    		break;
-    	}
-    	
+    if(numbers6[e] == input) {
+    	found = true;
+    	break;
     }
+}
     
     // 検索フラグを使用して結果を出力する
     if(found) {
