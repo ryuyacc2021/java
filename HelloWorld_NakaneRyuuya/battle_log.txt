@@ -1,0 +1,3 @@
+勝者: あう
+Player HP: 12
+Daemon HP: -11

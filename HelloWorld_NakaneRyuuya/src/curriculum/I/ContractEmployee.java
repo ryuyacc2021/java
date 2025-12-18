@@ -1,0 +1,22 @@
+package curriculum.I;
+	
+	// 親クラスを継承
+public class ContractEmployee extends Employee {
+	
+	// 時給
+	private static final int HOURLY_RATE = 1000;
+	
+	// コンストラクタ
+	public ContractEmployee(String id, String name) {
+		super(id, name);
+	}
+	
+	// 給料計算
+	@Override
+	public int calculateDailyWage(int hoursWorked) {
+		return hoursWorked * HOURLY_RATE;
+
+	}
+	
+	
+}
